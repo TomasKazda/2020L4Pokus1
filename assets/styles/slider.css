@@ -1,0 +1,36 @@
+:root {
+    --dot-color: black;
+    --dot-invert: gray;
+}
+.slider > div > * {
+    display: none;
+}
+
+.slider > div > *:target {
+    display: block;
+}
+
+.slider > nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slider > nav ul li {
+    display: inline;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.slider > nav ul li a {
+    text-decoration: none;
+    color: var(--dot-color);
+    background-color: currentColor;
+    border-radius: 1em;
+}
+
+.slider > nav ul li a:hover {
+    color: var(--dot-invert);
+}
+
